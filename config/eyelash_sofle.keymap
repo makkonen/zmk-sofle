@@ -35,9 +35,9 @@
         tap-ms = <100>;
     };
 
-    osm: osm {
+    osm: one_shot_mod {
         compatible = "zmk,behavior-sticky-key";
-        label = "One-Shot Mod";
+        label = "One-Shot-Mod";
         bindings = <&kp>;
         #binding-cells = <1>;
         release-after-ms = <2000>;
@@ -86,7 +86,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        base {
+        layer0 {
             bindings = <
 &kp ESC                     &kp N1  &kp N2        &kp N3        &kp N4     &kp N5       &kp UP_ARROW     &kp N6     &kp N7     &kp N8         &kp N9      &kp N0    &kp BACKSPACE
 &kp TAB                     &kp B   &kp L         &kp D         &kp W      &kp Z        &kp DOWN_ARROW   &kp J      &kp F      &kp O          &kp U       &kp APOS  &kp MINUS
@@ -99,7 +99,7 @@
             display-name = "BASE";
         };
 
-        nav {
+        layer1 {
             // Navigation layer (right hand) - activated by left thumb
 
             bindings = <
@@ -114,7 +114,7 @@
             display-name = "NAV";
         };
 
-        num {
+        layer2 {
             // Number layer (left hand) - activated by right thumb
 
             bindings = <
@@ -129,7 +129,7 @@
             display-name = "NUM";
         };
 
-        sym {
+        layer3 {
             // Symbol layer (left hand) - activated by right thumb + mod
 
             bindings = <
@@ -144,7 +144,7 @@
             display-name = "SYM";
         };
 
-        func {
+        layer4 {
             // Function layer (left hand) - activated by right thumb + additional mod
 
             bindings = <
@@ -159,7 +159,7 @@
             display-name = "FUNC";
         };
 
-        media {
+        layer5 {
             // Media layer (right hand) - activated by left thumb + additional mod
 
             bindings = <
