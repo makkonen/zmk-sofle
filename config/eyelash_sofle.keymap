@@ -46,6 +46,30 @@
     };
 
     behaviors {
+        repeat_F13: repeat_F13 {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp F13>;
+            
+            repeat {
+                trigger-keys = <B L D Z N R T S M C V>;
+                bindings = <&key_repeat>;
+                max-prior-idle-ms = <500>;
+                strict-modifiers;
+            };
+        };
+        repeat_F14: repeat_F14 {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp F14>;
+            
+            repeat {
+                trigger-keys = <F O E K P>;
+                bindings = <&key_repeat>;
+                max-prior-idle-ms = <500>;
+                strict-modifiers;
+            };
+        };
     };
 
     keymap {
