@@ -38,16 +38,17 @@
     behaviors {
         osm: one_shot_mod {
             compatible = "zmk,behavior-sticky-key";
-            label = "ONE_SHOT_MOD";
+            label = "One-Shot Mod";
             #binding-cells = <1>;
             bindings = <&kp>;
-            release-after-ms = <1000>;
+            release-after-ms = <2000>;
             quick-release;
         };
 
-        arcane_l: arcane_l {
+        arcl: arcane_left {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
+            label = "Arcane Left";
             bindings = <&mo 1>;
 
             repeat {
@@ -63,11 +64,12 @@
                 bindings = <&before>;
             };
         };
-
-        repeat_F14: repeat_F14 {
+        
+        arcr: arcane_right {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
-            bindings = <&kp F14>;
+            label = "Arcane Right";
+            bindings = <&mo 2>;
 
             repeat {
                 trigger-keys = <F O E K P>;
@@ -95,7 +97,7 @@
 &kp TAB                     &kp B         &kp L         &kp D        &kp W      &kp Z        &kp DOWN_ARROW   &kp J             &kp F      &kp O            &kp U       &kp APOS    &kp MINUS
 &mt LCTRL ESCAPE            &kp N         &kp R         &kp T        &kp S      &kp G        &kp LEFT_ARROW   &kp Y             &kp H      &kp A            &kp E       &kp I       &kp ENTER
 &mt LSHFT LEFT_PARENTHESIS  &kp Q         &kp X         &kp M        &kp C      &kp V        &kp RIGHT_ARROW  &kp K             &kp P      &kp COMMA        &kp DOT     &kp FSLH    &mt RSHFT RIGHT_PARENTHESIS
-&kp ENTER                   &kp LEFT_ALT  &kp LEFT_GUI  &lt 5 ENTER  &arcane_l  &kp SPACE    &kp ENTER        &osm RIGHT_SHIFT  &lt 2 F14  &lt 4 BACKSPACE  &kp DELETE  &kp RETURN
+&kp ENTER                   &kp LEFT_ALT  &kp LEFT_GUI  &lt 5 ENTER  &arcl      &kp SPACE    &kp ENTER        &osm RIGHT_SHIFT  &arcr      &lt 4 BACKSPACE  &kp DELETE  &kp RETURN
             >;
 
             sensor-bindings = <&scroll_encoder>;
