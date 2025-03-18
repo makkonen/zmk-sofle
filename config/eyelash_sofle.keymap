@@ -80,8 +80,8 @@
             bindings
                 = <&kp E &kp F &kp O &kp R &kp E>
                 ;
-        }
-    }
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
