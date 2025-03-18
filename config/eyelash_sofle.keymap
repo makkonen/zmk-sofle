@@ -57,7 +57,7 @@
                 max-prior-idle-ms = <500>;
                 strict-modifiers;
             };
-            arcl_b { trigger-keys = <B>; max-prior-idle-ms = <300>; bindings = &before; };
+            arcl_b { trigger-keys = <B>; max-prior-idle-ms = <300>; bindings = <&before>; };
         };
         repeat_F14: repeat_F14 {
             compatible = "zmk,behavior-adaptive-key";
