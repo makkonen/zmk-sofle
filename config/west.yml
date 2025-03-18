@@ -14,7 +14,7 @@ manifest:
     - name: eyelash_sofle
       url: https://github.com/makkonen/zmk-sofle
       revision: main
-    - name: mario-peripheral-animation
+    - name: hammerbeam-slideshow
       remote: gpeye
       revision: main 
     - name: zmk
