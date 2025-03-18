@@ -90,7 +90,7 @@
 &kp TAB     &kp B      &kp L         &kp D         &kp W      &kp Z        &kp DOWN_ARROW   &kp J      &kp F      &kp O      &kp U     &kp APOS    &kp MINUS
 &kp LCTRL   &kp N      &kp R         &kp T         &kp S      &kp G        &kp LEFT_ARROW   &kp Y      &kp H      &kp A      &kp E     &kp I       &kp ENTER
 &kp LSHFT   &kp Q      &kp X         &kp M         &kp C      &kp V        &kp RIGHT_ARROW  &kp K      &kp P      &kp COMMA  &kp DOT   &kp FSLH    &kp RSHFT
-&kp ENTER   &mo 5      &kp LEFT_GUI  &kp LEFT_ALT  &arcane_l  &kp SPACE    &kp ENTER        &kp ENTER  &lt 2 F14  &kp BSPC   &kp DEL   &mo 4
+&kp ENTER   &mo 5      &kp LEFT_GUI  &kp LEFT_ALT  &lt 1 F13  &kp SPACE    &kp ENTER        &kp ENTER  &lt 2 F14  &kp BSPC   &kp DEL   &mo 4
             >;
 
             sensor-bindings = <&scroll_encoder>;
