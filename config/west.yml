@@ -13,7 +13,7 @@ manifest:
   projects:
     - name: eyelash_sofle
       url: https://github.com/makkonen/zmk-sofle
-      revision: refactor
+      revision: main
     - name: mario-peripheral-animation
       remote: gpeye
       revision: main 
