@@ -27,6 +27,14 @@
 };
 
 / {
+    scroll_encoder: scroll_encoder {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
+        tap-ms = <100>;
+    };
+
     behaviors {
         osm: one_shot_mod {
             compatible = "zmk,behavior-sticky-key";
@@ -36,34 +44,13 @@
             release-after-ms = <1000>;
             quick-release;
         };
-    };
-
-    scroll_encoder: scroll_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
-        tap-ms = <100>;
-    };
-
-    osm: one_shot_mod {
-        compatible = "zmk,behavior-sticky-key";
-        label = "One-Shot-Mod";
-        bindings = <&kp>;
-        #binding-cells = <1>;
-        release-after-ms = <2000>;
-        quick-release;
-        ignore-modifiers;
-    };
-
-    behaviors {
         arcane_l: arcane_l {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&mo 1>;
             
             repeat {
-                trigger-keys = <B L D Z N R T S M C V>;
+                trigger-keys = <L D Z N R T S M C V>;
                 bindings = <&key_repeat>;
                 max-prior-idle-ms = <500>;
                 strict-modifiers;
