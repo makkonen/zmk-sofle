@@ -61,7 +61,37 @@
             arcl_b {
                 trigger-keys = <B>;
                 max-prior-idle-ms = <300>;
-                bindings = <&before>;
+                bindings = <&efore>;
+            };
+
+            arcl_m {
+                trigger-keys = <M>;
+                max-prior-idle-ms = <300>;
+                bindings = <&ent>;
+            };
+
+            arcl_c {
+                trigger-keys = <C>;
+                max-prior-idle-ms = <300>;
+                bindings = <&ould>;
+            };
+
+            arcl_w {
+                trigger-keys = <W>;
+                max-prior-idle-ms = <300>;
+                bindings = <&ould>;
+            };
+
+            arcl_comma {
+                trigger-keys = <COMMA>;
+                max-prior-idle-ms = <300>;
+                bindings = <&spc_but>;
+            };
+
+            arcl_dot {
+                trigger-keys = <DOT>;
+                max-prior-idle-ms = <300>;
+                bindings = <&org>;
             };
         };
         
@@ -77,14 +107,134 @@
                 max-prior-idle-ms = <500>;
                 strict-modifiers;
             };
+
+            arcr_b {
+                trigger-keys = <B>;
+                max-prior-idle-ms = <300>;
+                bindings = <&ecause>;
+            };
+
+            arcr_n {
+                trigger-keys = <N>;
+                max-prior-idle-ms = <300>;
+                bindings = <&ion>;
+            };
+
+            arcr_t {
+                trigger-keys = <T>;
+                max-prior-idle-ms = <300>;
+                bindings = <&ion>;
+            };
+
+            arcr_i {
+                trigger-keys = <I>;
+                max-prior-idle-ms = <300>;
+                bindings = <&ng>;
+            };
+
+            arcr_y {
+                trigger-keys = <Y>;
+                max-prior-idle-ms = <300>;
+                bindings = <&ou>;
+            };
         };
     };
 
     macros {
-        before: before {
+        efore: efore {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp E &kp F &kp O &kp R &kp E>;
+        };
+
+        qu: qu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Q &kp U>;
+        };
+
+        nd: nd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp D>;
+        };
+
+        what: what {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp W &kp H &kp A &kp T>;
+        };
+
+        mc_on: mc_on {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp N>;
+        };
+
+        spc_and: spc_and {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp A &kp N &kp D>;
+        };
+
+        com: com {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp O &kp M>;
+        };
+
+        ould: ould {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp U &kp L &kp D>;
+        };
+
+        ion: ion {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp O &kp N>;
+        };
+
+        ent: ent {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp E &kp N &kp T>;
+        };
+
+        ng: ng {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp G>;
+        };
+
+        ou: ou {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp U>;
+        };
+
+        ecause: ecause {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp E &kp C &kp A &kp U &kp S &kp E>;
+        };
+
+        hich: hich {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp H &kp I &kp C &kp H>;
+        };
+
+        spc_but: spc_but {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp B &kp U &kp T>;
+        };
+
+        org: org {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp R &kp G>;
         };
     };
 
