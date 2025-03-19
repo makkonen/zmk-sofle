@@ -88,7 +88,7 @@
                 bindings = <&nd>;
             };
         };
-        
+
         arcr: arcane_right {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
@@ -261,11 +261,11 @@
 
         base {
             bindings = <
-&kp ESC                     &kp N1        &kp N2        &kp N3       &kp N4     &kp N5       &kp UP_ARROW     &kp N6            &kp N7     &kp N8           &kp N9      &kp N0      &kp BACKSPACE
-&kp TAB                     &kp B         &kp L         &kp D        &kp W      &kp Z        &kp DOWN_ARROW   &kp J             &kp F      &kp O            &kp U       &kp APOS    &kp MINUS
-&mt LCTRL ESCAPE            &kp N         &kp R         &kp T        &kp S      &kp G        &kp LEFT_ARROW   &kp Y             &kp H      &kp A            &kp E       &kp I       &kp ENTER
-&mt LSHFT LEFT_PARENTHESIS  &kp Q         &kp X         &kp M        &kp C      &kp V        &kp RIGHT_ARROW  &kp K             &kp P      &kp COMMA        &kp DOT     &kp FSLH    &mt RSHFT RIGHT_PARENTHESIS
-&kp ENTER                   &kp LEFT_ALT  &kp LEFT_GUI  &lt 5 ENTER  &arcl      &kp SPACE    &kp ENTER        &osm RIGHT_SHIFT  &arcr      &lt 4 BACKSPACE  &kp DELETE  &kp RETURN
+&kp ESC                     &kp N1        &kp N2        &kp N3           &kp N4  &kp N5       &mmv MOVE_UP     &kp N6            &kp N7  &kp N8        &kp N9         &kp N0      &kp BACKSPACE
+&kp TAB                     &kp B         &kp L         &kp D            &kp W   &kp Z        &mmv MOVE_DOWN   &kp J             &kp F   &kp O         &kp U          &kp APOS    &kp MINUS
+&mt LCTRL ESCAPE            &kp N         &kp R         &kp T            &kp S   &kp G        &mmv MOVE_LEFT   &kp Y             &kp H   &kp A         &kp E          &kp I       &kp ENTER
+&mt LSHFT LEFT_PARENTHESIS  &kp Q         &kp X         &kp M            &kp C   &kp V        &mmv MOVE_RIGHT  &kp K             &kp P   &kp COMMA     &kp DOT        &kp FSLH    &mt RSHFT RIGHT_PARENTHESIS
+&mkp RCLK                   &kp LEFT_ALT  &kp LEFT_GUI  &lt 5 BACKSPACE  &arcl   &kp SPACE    &mkp LCLK        &osm RIGHT_SHIFT  &arcr   &lt 4 RETURN  &kp BACKSPACE  &kp DELETE
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -336,11 +336,11 @@
             // Media layer (right hand) - activated by left thumb + additional mod
 
             bindings = <
-&rgb_ug RGB_ON   &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none    &none  &none       &none         &none       &none  &none  &rgb_ug RGB_OFF
-&bt BT_CLR       &out OUT_USB     &out OUT_BLE  &bootloader   &sys_reset    &none    &none  &none       &kp C_VOL_UP  &none       &none  &none  &rgb_ug RGB_EFR
-&osm LGUI        &osm LALT        &osm LCTRL    &osm LSHFT    &none         &none    &none  &kp C_PREV  &kp C_VOL_DN  &kp C_NEXT  &none  &none  &rgb_ug RGB_EFF
-&rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &none         &none         &none         &none    &none  &none       &kp C_PP      &kp C_MUTE  &none  &none  &kp C_MUTE
-&none            &none            &none         &none         &none         &none    &none  &kp C_STOP  &none         &none       &none
+&rgb_ug RGB_ON   &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &none  &none       &none         &none       &none  &none
+&rgb_ug RGB_OFF  &bt BT_CLR       &out OUT_USB     &out OUT_BLE  &bootloader   &sys_reset      &none  &none  &none       &kp C_VOL_UP  &none       &none  &none
+&rgb_ug RGB_EFR  &osm LGUI        &osm LALT        &osm LCTRL    &osm LSHFT    &none           &none  &none  &kp C_PREV  &kp C_VOL_DN  &kp C_NEXT  &none  &none
+&rgb_ug RGB_EFF  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &none         &none         &none           &none  &none  &none       &kp C_PP      &kp C_MUTE  &none  &none
+&kp C_MUTE       &none            &none            &none         &none         &none           &none  &none  &kp C_STOP  &none         &none       &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
