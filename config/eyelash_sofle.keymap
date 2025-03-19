@@ -120,14 +120,8 @@
                 bindings = <&ent>;
             };
 
-            arcr_c {
-                trigger-keys = <C>;
-                max-prior-idle-ms = <300>;
-                bindings = <&ould>;
-            };
-
-            arcr_w {
-                trigger-keys = <W>;
+            arcr_cw {
+                trigger-keys = <C W>;
                 max-prior-idle-ms = <300>;
                 bindings = <&ould>;
             };
@@ -144,14 +138,8 @@
                 bindings = <&org>;
             };
 
-            arcr_n {
-                trigger-keys = <N>;
-                max-prior-idle-ms = <300>;
-                bindings = <&ion>;
-            };
-
-            arcr_t {
-                trigger-keys = <T>;
+            arcr_nt {
+                trigger-keys = <N T>;
                 max-prior-idle-ms = <300>;
                 bindings = <&ion>;
             };
@@ -348,11 +336,11 @@
             // Media layer (right hand) - activated by left thumb + additional mod
 
             bindings = <
-&bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none    &none  &none       &none         &none       &none  &none  &rgb_ug RGB_OFF
+&rgb_ug RGB_ON   &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none    &none  &none       &none         &none       &none  &none  &rgb_ug RGB_OFF
 &bt BT_CLR       &out OUT_USB     &out OUT_BLE  &bootloader   &sys_reset    &none    &none  &none       &kp C_VOL_UP  &none       &none  &none  &rgb_ug RGB_EFR
 &osm LGUI        &osm LALT        &osm LCTRL    &osm LSHFT    &none         &none    &none  &kp C_PREV  &kp C_VOL_DN  &kp C_NEXT  &none  &none  &rgb_ug RGB_EFF
 &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &none         &none         &none         &none    &none  &none       &kp C_PP      &kp C_MUTE  &none  &none  &kp C_MUTE
-&none            &none            &none         &none         &none         &none    &none  &kp C_STOP  &none         &none       &none  &none
+&none            &none            &none         &none         &none         &none    &none  &kp C_STOP  &none         &none       &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
