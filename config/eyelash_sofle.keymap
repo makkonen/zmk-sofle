@@ -159,10 +159,10 @@
             bindings = <&kp N &kp D>;
         };
 
-        what: what {
+        hat: hat {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp W &kp H &kp A &kp T>;
+            bindings = <&kp H &kp A &kp T>;
         };
 
         mc_on: mc_on {
