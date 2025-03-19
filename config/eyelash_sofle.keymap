@@ -64,34 +64,28 @@
                 bindings = <&efore>;
             };
 
-            arcl_m {
-                trigger-keys = <M>;
+            arcl_f {
+                trigger-keys = <F>;
                 max-prior-idle-ms = <300>;
-                bindings = <&ent>;
-            };
-
-            arcl_c {
-                trigger-keys = <C>;
-                max-prior-idle-ms = <300>;
-                bindings = <&ould>;
+                bindings = <&kp Y>;
             };
 
             arcl_w {
                 trigger-keys = <W>;
                 max-prior-idle-ms = <300>;
-                bindings = <&ould>;
+                bindings = <&hat>;
             };
 
-            arcl_comma {
-                trigger-keys = <COMMA>;
+            arcl_p {
+                trigger-keys = <P>;
                 max-prior-idle-ms = <300>;
-                bindings = <&spc_but>;
+                bindings = <&kp H>;
             };
 
-            arcl_dot {
-                trigger-keys = <DOT>;
+            arcl_a {
+                trigger-keys = <A>;
                 max-prior-idle-ms = <300>;
-                bindings = <&org>;
+                bindings = <&nd>;
             };
         };
         
@@ -108,10 +102,46 @@
                 strict-modifiers;
             };
 
+            arcr_a {
+                trigger-keys = <A>;
+                max-prior-idle-ms = <300>;
+                bindings = <&nd>;
+            };
+
             arcr_b {
                 trigger-keys = <B>;
                 max-prior-idle-ms = <300>;
                 bindings = <&ecause>;
+            };
+
+            arcr_m {
+                trigger-keys = <M>;
+                max-prior-idle-ms = <300>;
+                bindings = <&ent>;
+            };
+
+            arcr_c {
+                trigger-keys = <C>;
+                max-prior-idle-ms = <300>;
+                bindings = <&ould>;
+            };
+
+            arcr_w {
+                trigger-keys = <W>;
+                max-prior-idle-ms = <300>;
+                bindings = <&ould>;
+            };
+
+            arcr_comma {
+                trigger-keys = <COMMA>;
+                max-prior-idle-ms = <300>;
+                bindings = <&spc_but>;
+            };
+
+            arcr_dot {
+                trigger-keys = <DOT>;
+                max-prior-idle-ms = <300>;
+                bindings = <&org>;
             };
 
             arcr_n {
