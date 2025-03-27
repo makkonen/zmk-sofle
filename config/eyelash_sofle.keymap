@@ -146,7 +146,7 @@
             label = "Arcane Left";
             bindings = <&mo>, <&arcl_tap>;
 
-            #binding-cells = <1>;
+            #binding-cells = <2>;
             tapping-term-ms = <185>;
         };
 
@@ -155,7 +155,7 @@
             label = "Arcane Right";
             bindings = <&mo>, <&arcr_tap>;
 
-            #binding-cells = <1>;
+            #binding-cells = <2>;
             tapping-term-ms = <185>;
         };
     };
