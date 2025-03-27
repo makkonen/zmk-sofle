@@ -278,6 +278,45 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Tab {
+            bindings = <&kp TAB>;
+            key-positions = <28 29>;
+        };
+
+        Copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <41 42>;
+        };
+
+        Paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <42 43>;
+        };
+
+        Backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <21 22>;
+        };
+
+        Delete {
+            bindings = <&kp DELETE>;
+            key-positions = <22 23>;
+        };
+
+        Dash {
+            bindings = <&kp MINUS>;
+            key-positions = <34 35>;
+        };
+
+        Semicolon {
+            bindings = <&kp SEMI>;
+            key-positions = <35 36>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
