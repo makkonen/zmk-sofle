@@ -277,10 +277,10 @@
             bindings = <&kp O &kp R &kp G>;
         };
 
-        new_macro: new_macro {
+        thanks: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp LS(T) &kp H &kp A &kp N &kp K &kp S &kp EXCL>;
             label = "NEW_MACRO";
         };
     };
