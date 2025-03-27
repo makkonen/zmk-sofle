@@ -45,114 +45,98 @@
             quick-release;
         };
 
-        arcl: arcane_left {
+        arcl_tap: arcane_left_tap {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
-            label = "Arcane Left";
+            label = "Arcane Left Tap";
             bindings = <&mo 1>;
 
             repeat {
                 trigger-keys = <L D Z N R T S M C V>;
                 bindings = <&key_repeat>;
-                max-prior-idle-ms = <500>;
                 strict-modifiers;
             };
 
             arcl_b {
                 trigger-keys = <B>;
-                max-prior-idle-ms = <300>;
                 bindings = <&efore>;
             };
 
             arcl_f {
                 trigger-keys = <F>;
-                max-prior-idle-ms = <300>;
                 bindings = <&kp Y>;
             };
 
             arcl_w {
                 trigger-keys = <W>;
-                max-prior-idle-ms = <300>;
                 bindings = <&hat>;
             };
 
             arcl_p {
                 trigger-keys = <P>;
-                max-prior-idle-ms = <300>;
                 bindings = <&kp H>;
             };
 
             arcl_a {
                 trigger-keys = <A>;
-                max-prior-idle-ms = <300>;
                 bindings = <&nd>;
             };
         };
 
-        arcr: arcane_right {
+        arcr_tap: arcane_right_tap {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
-            label = "Arcane Right";
+            label = "Arcane Right Tap";
             bindings = <&mo 2>;
 
             repeat {
                 trigger-keys = <F O E K P>;
                 bindings = <&key_repeat>;
-                max-prior-idle-ms = <500>;
                 strict-modifiers;
             };
 
             arcr_a {
                 trigger-keys = <A>;
-                max-prior-idle-ms = <300>;
                 bindings = <&nd>;
             };
 
             arcr_b {
                 trigger-keys = <B>;
-                max-prior-idle-ms = <300>;
                 bindings = <&ecause>;
             };
 
             arcr_m {
                 trigger-keys = <M>;
-                max-prior-idle-ms = <300>;
                 bindings = <&ent>;
             };
 
             arcr_cw {
                 trigger-keys = <C W>;
-                max-prior-idle-ms = <300>;
                 bindings = <&ould>;
             };
 
             arcr_comma {
                 trigger-keys = <COMMA>;
-                max-prior-idle-ms = <300>;
                 bindings = <&spc_but>;
             };
 
             arcr_dot {
                 trigger-keys = <DOT>;
-                max-prior-idle-ms = <300>;
                 bindings = <&org>;
             };
 
             arcr_nt {
                 trigger-keys = <N T>;
-                max-prior-idle-ms = <300>;
                 bindings = <&ion>;
             };
 
             arcr_i {
                 trigger-keys = <I>;
-                max-prior-idle-ms = <300>;
                 bindings = <&ng>;
             };
 
             arcr_y {
                 trigger-keys = <Y>;
-                max-prior-idle-ms = <300>;
                 bindings = <&ou>;
             };
         };
@@ -265,7 +249,7 @@
 &kp TAB                     &kp B         &kp L         &kp D            &kp W   &kp Z        &mmv MOVE_DOWN   &kp J             &kp F   &kp O         &kp U          &kp APOS    &kp MINUS
 &mt LCTRL ESCAPE            &kp N         &kp R         &kp T            &kp S   &kp G        &mmv MOVE_LEFT   &kp Y             &kp H   &kp A         &kp E          &kp I       &kp ENTER
 &mt LSHFT LEFT_PARENTHESIS  &kp Q         &kp X         &kp M            &kp C   &kp V        &mmv MOVE_RIGHT  &kp K             &kp P   &kp COMMA     &kp DOT        &kp FSLH    &mt RSHFT RIGHT_PARENTHESIS
-&mkp RCLK                   &kp LEFT_ALT  &kp LEFT_GUI  &lt 5 BACKSPACE  &arcl   &kp SPACE    &mkp LCLK        &osm RIGHT_SHIFT  &arcr   &lt 4 RETURN  &kp BACKSPACE  &kp DELETE
+&mkp RCLK                   &kp LEFT_ALT  &kp LEFT_GUI  &lt 5 BACKSPACE  &arcl_tap   &kp SPACE    &mkp LCLK        &osm RIGHT_SHIFT  &arcr_tap   &lt 4 RETURN  &kp BACKSPACE  &kp DELETE
             >;
 
             sensor-bindings = <&scroll_encoder>;
