@@ -144,18 +144,18 @@
         arcl: arcane_left {
             compatible = "zmk,behavior-hold-tap";
             label = "Arcane Left";
-            bindings = <&mo 1>, <&arcl_tap>;
+            bindings = <&mo>, <&arcl_tap>;
 
-            #binding-cells = <3>;
+            #binding-cells = <2>;
             tapping-term-ms = <185>;
         };
 
         arcr: arcane_right {
             compatible = "zmk,behavior-hold-tap";
             label = "Arcane Right";
-            bindings = <&mo 2>, <&arcr_tap>;
+            bindings = <&mo>, <&arcr_tap>;
 
-            #binding-cells = <3>;
+            #binding-cells = <2>;
             tapping-term-ms = <185>;
         };
     };
