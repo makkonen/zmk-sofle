@@ -263,11 +263,11 @@
 
         base {
             bindings = <
-&kp ESC                     &kp N1        &kp N2        &kp N3           &kp N4             &kp N5       &mmv MOVE_UP     &kp N6            &kp N7             &kp N8        &kp N9         &kp N0      &kp BACKSPACE
-&kp TAB                     &kp B         &kp L         &kp D            &kp W              &kp Z        &mmv MOVE_DOWN   &kp J             &kp F              &kp O         &kp U          &kp APOS    &kp MINUS
-&mt LCTRL ESCAPE            &kp N         &kp R         &kp T            &kp S              &kp G        &mmv MOVE_LEFT   &kp Y             &kp H              &kp A         &kp E          &kp I       &kp ENTER
-&mt LSHFT LEFT_PARENTHESIS  &kp Q         &kp X         &kp M            &kp C              &kp V        &mmv MOVE_RIGHT  &kp K             &kp P              &kp COMMA     &kp DOT        &kp FSLH    &mt RSHFT RIGHT_PARENTHESIS
-&mkp RCLK                   &kp LEFT_ALT  &kp LEFT_GUI  &lt 5 BACKSPACE  &arcl 1   &kp SPACE    &mkp LCLK        &osm RIGHT_SHIFT  &arcr 2   &lt 4 RETURN  &kp BACKSPACE  &kp DELETE
+&kp ESC                     &kp N1        &kp N2        &kp N3           &kp N4     &kp N5       &mmv MOVE_UP     &kp N6            &kp N7     &kp N8        &kp N9         &kp N0      &kp BACKSPACE
+&kp TAB                     &kp B         &kp L         &kp D            &kp W      &kp Z        &mmv MOVE_DOWN   &kp J             &kp F      &kp O         &kp U          &kp APOS    &kp MINUS
+&mt LCTRL ESCAPE            &kp N         &kp R         &kp T            &kp S      &kp G        &mmv MOVE_LEFT   &kp Y             &kp H      &kp A         &kp E          &kp I       &kp ENTER
+&mt LSHFT LEFT_PARENTHESIS  &kp Q         &kp X         &kp M            &kp C      &kp V        &mmv MOVE_RIGHT  &kp K             &kp P      &kp COMMA     &kp DOT        &kp FSLH    &mt RSHFT RIGHT_PARENTHESIS
+&mkp RCLK                   &kp LEFT_ALT  &kp LEFT_GUI  &lt 5 BACKSPACE  &arcl_tap  &kp SPACE    &mkp LCLK        &osm RIGHT_SHIFT  &arcr_tap  &lt 4 RETURN  &kp BACKSPACE  &kp DELETE
             >;
 
             sensor-bindings = <&scroll_encoder>;
