@@ -58,9 +58,9 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:backspace$$', h: MEDIA}
   - {t: '&arcl_tap', h: NAV}
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', h: 'Alt+Sft+$$mdi:apple-keyboard-control$$'}
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: SYM}
   - {t: '&arcr_tap', h: NUM}
   - {t: RETURN, h: FUNC}
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -255,7 +255,7 @@ layers:
   - (
   - )
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
