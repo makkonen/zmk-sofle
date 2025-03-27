@@ -144,7 +144,7 @@
         arcl: arcane_left {
             compatible = "zmk,behavior-hold-tap";
             label = "Arcane Left";
-            bindings = <&mo>, <&arcl_tap>;
+            bindings = <&mo 1>, <&arcl_tap>;
 
             #binding-cells = <2>;
             tapping-term-ms = <185>;
@@ -153,7 +153,7 @@
         arcr: arcane_right {
             compatible = "zmk,behavior-hold-tap";
             label = "Arcane Right";
-            bindings = <&mo>, <&arcr_tap>;
+            bindings = <&mo 2>, <&arcr_tap>;
 
             #binding-cells = <2>;
             tapping-term-ms = <185>;
@@ -267,7 +267,7 @@
 &kp TAB                     &kp B         &kp L         &kp D            &kp W      &kp Z        &mmv MOVE_DOWN   &kp J             &kp F      &kp O         &kp U          &kp APOS    &kp MINUS
 &mt LCTRL ESCAPE            &kp N         &kp R         &kp T            &kp S      &kp G        &mmv MOVE_LEFT   &kp Y             &kp H      &kp A         &kp E          &kp I       &kp ENTER
 &mt LSHFT LEFT_PARENTHESIS  &kp Q         &kp X         &kp M            &kp C      &kp V        &mmv MOVE_RIGHT  &kp K             &kp P      &kp COMMA     &kp DOT        &kp FSLH    &mt RSHFT RIGHT_PARENTHESIS
-&mkp RCLK                   &kp LEFT_ALT  &kp LEFT_GUI  &lt 5 BACKSPACE  &arcl_tap  &kp SPACE    &mkp LCLK        &osm RIGHT_SHIFT  &arcr_tap  &lt 4 RETURN  &kp BACKSPACE  &kp DELETE
+&mkp RCLK                   &kp LEFT_ALT  &kp LEFT_GUI  &lt 5 BACKSPACE  &arcl  &kp SPACE    &mkp LCLK        &osm RIGHT_SHIFT  &arcr  &lt 4 RETURN  &kp BACKSPACE  &kp DELETE
             >;
 
             sensor-bindings = <&scroll_encoder>;
